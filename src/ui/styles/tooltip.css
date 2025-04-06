@@ -1,20 +1,16 @@
-:root {
-    --main-color: #ba75e2;
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
-    color: var(--main-color);
-    border-bottom: 1px dotted var(--main-color);
+    color: var(--highlight);
+    border-bottom: 1px dotted var(--highlight);
     cursor: help;
 }
 
 .tip {
     visibility: hidden;
     width: 150px;
-    background-color: var(--main-color);
-    color: #fff;
+    background-color: var(--highlight);
+    color: var(--highlight-text);
     text-align: center;
     border-radius: 10px;
     padding: 5px 0;
@@ -41,5 +37,5 @@
     border-width: 4px;
     border-style: solid;
     border-color: transparent;
-    border-top-color: var(--main-color);
+    border-top-color: var(--highlight);
 }
