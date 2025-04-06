@@ -1,0 +1,23 @@
+.snackbar {
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+    /* set the start reference to the middle of the element (200px width + 40px padding /2) */
+    margin-left: -120px;
+    /* set the start position to the middle of the screen */
+    left: 50%;
+    top: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    background: var(--highlight);
+    text-align: center;
+    color: var(--highlight-text);
+    /* hide the element above the top of the page */
+    margin-top: -100%;
+    transition: all 0.3s;
+}
+
+.snackbar.active {
+    /* show the element right on the top of the page */
+    margin-top: 0;
+}
