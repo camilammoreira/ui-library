@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
-    --highlight: #ba75e2;
+    --highlight: #406C29;
     --highlight-text: #fff;
-    --bg-dark-color: #f2f2f2;
-    --bg-light-color: #fbfbfb;
+    --bg-dark-color: #edeae7;
+    --bg-light-color: #F7F4F0;
+    --main-font: "Inter", "Arial, sans-sefif";
+    --text-color: #3C799E;
 }
 
 body {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: var(--main-font);
+    background-color: var(--bg-light-color);
 }
 
 .container {
@@ -29,4 +35,22 @@ button {
 button:hover {
     background: var(--highlight);
     color: var(--highlight-text);
+}
+
+footer {
+    margin: 1rem 0;
+    font-size: .8rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--highlight);
+    font-weight: 600;
+    text-underline-offset: .3rem;
+    transition: 300ms;
+}
+
+footer a:hover {
+    text-underline-offset: .5rem;
+    transition: 300ms;
 }

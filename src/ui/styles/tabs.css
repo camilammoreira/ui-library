@@ -19,9 +19,9 @@
 }
 
 .tabs .content {
-    background: var(--bg-light-color);
+    background: var(--bg-dark-color);
     padding: 10px 20px;
-    border-radius: 6px;
+    border-radius: 10px;
     display: none;
 }
 

@@ -23,7 +23,7 @@ const snackbar = new Snackbar();
 snackbar.init();
 
 document.querySelector(".snackbar-trigger").addEventListener("click", () => {
-    snackbar.show("you clicked me! :)")
+    snackbar.show("You clicked me :)")
 }
 
 )
