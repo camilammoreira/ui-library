@@ -1,6 +1,8 @@
 :root {
     --highlight: #ba75e2;
     --highlight-text: #fff;
+    --bg-dark-color: #f2f2f2;
+    --bg-light-color: #fbfbfb;
 }
 
 body {
@@ -10,4 +12,21 @@ body {
 .container {
     margin: 40px;
     margin-top: 60px;
+}
+
+button {
+    width: 200px;
+    background: var(--bg-dark-color);
+    padding: 10px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+}
+
+button:hover {
+    background: var(--highlight);
+    color: var(--highlight-text);
 }
