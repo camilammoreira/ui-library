@@ -1,0 +1,30 @@
+.dropdown .trigger {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown .trigger::after {
+    content: ">";
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    /* Rotate chevron to face down and rescales to 0.5 hight and 1 width */
+    transform: rotate(90deg) scale(0.5, 1);
+    /* transition the transform property in 0.3 seconds when it cahnges */
+    transition: transform 0.3s;
+}
+
+.dropdown .trigger.active::after {
+    transform: rotate(-90deg) scale(0.5, 1);
+}
+
+.dropdown .content {
+    display: none;
+}
+
+.dropdown .content.active {
+    display: block;
+}
